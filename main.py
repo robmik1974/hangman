@@ -3,16 +3,13 @@ import hangman_art
 import hangman_words
 import os
 
-
+os.system('clear')
 word_list = hangman_words.word_list
 chosen_word = random.choice(word_list)
 
 lives = 6
 
 print(hangman_art.logo)
-
-# Testing code
-print(f'Pssst, the solution is {chosen_word}.')
 
 display = list()
 for _ in range(len(chosen_word)):
